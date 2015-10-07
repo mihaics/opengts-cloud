@@ -27,20 +27,20 @@ RUN \
 
 RUN ln -s $ORACLE_JAVA_HOME $JAVA_HOME
 
-RUN apt-get -y install  ant curl unzip  sudo tar mysql-server software-properties-common python-jinja2 python-pip
+RUN apt-get -y install  ant curl unzip  sudo tar software-properties-common python-jinja2 python-pip
 RUN pip install j2cli
 
 
 RUN curl -L https://github.com/mihaics/opengts-cloud/archive/master.zip -o /usr/local/opengts-cloud-master.zip && \
     unzip /usr/local/opengts-cloud-master.zip -d /usr/local && \
     ln -s /usr/local/opengts-cloud-master/OpenGTS_$GTS_VERSION $GTS_HOME &&\
-	rm /usr/local/opengts-cloud-master.zip
+    rm /usr/local/opengts-cloud-master.zip
 
 VOLUME /usr/local/opengts-cloud-master/config
 
 
-	
-	# http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
+
+# http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 RUN curl -L http://archive.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz -o /usr/local/tomcat.tar.gz
 
 RUN  tar zxf /usr/local/tomcat.tar.gz -C /usr/local && rm /usr/local/tomcat.tar.gz && ln -s /usr/local/apache-tomcat-$TOMCAT_VERSION $CATALINA_HOME
@@ -48,12 +48,12 @@ RUN  tar zxf /usr/local/tomcat.tar.gz -C /usr/local && rm /usr/local/tomcat.tar.
 ADD tomcat-users.xml /usr/local/apache-tomcat-$TOMCAT_VERSION/conf/
 
 #put java.mail in place
-RUN curl -L http://java.net/projects/javamail/downloads/download/javax.mail.jar -o /usr/local/OpenGTS_$GTS_VERSION/jlib/javamail/javax.mail.jar
+RUN curl -L http://java.net/projects/javamail/downloads/download/javax.mail.jar -o $GTS_HOME/jlib/javamail/javax.mail.jar
 
 # put mysql.java in place
-RUN curl -L http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.31.tar.gz  -o /usr/local/OpenGTS_$GTS_VERSION/jlib/jdbc.mysql/mysql-connector-java-5.1.31.tar.gz && \
-     tar xvf /usr/local/OpenGTS_$GTS_VERSION/jlib/jdbc.mysql/mysql-connector-java-5.1.31.tar.gz mysql-connector-java-5.1.31/mysql-connector-java-5.1.31-bin.jar -O > /usr/local/OpenGTS_$GTS_VERSION/jlib/jdbc.mysql/mysql-connector-java-5.1.31-bin.jar && \
-     rm -f /usr/local/OpenGTS_$GTS_VERSION/jlib/jdbc.mysql/mysql-connector-java-5.1.31.tar.gz
+RUN curl -L http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.31.tar.gz  -o $GTS_HOME/jlib/jdbc.mysql/mysql-connector-java-5.1.31.tar.gz && \
+     tar xvf $GTS_HOME/jlib/jdbc.mysql/mysql-connector-java-5.1.31.tar.gz mysql-connector-java-5.1.31/mysql-connector-java-5.1.31-bin.jar -O > $GTS_HOME/jlib/jdbc.mysql/mysql-connector-java-5.1.31-bin.jar && \
+     rm -f $GTS_HOME/jlib/jdbc.mysql/mysql-connector-java-5.1.31.tar.gz
 
 RUN cp $GTS_HOME/jlib/*/*.jar $CATALINA_HOME/lib
 RUN cp $GTS_HOME/jlib/*/*.jar $JAVA_HOME/jre/lib/ext/
