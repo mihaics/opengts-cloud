@@ -14,7 +14,6 @@ ENV ORACLE_JAVA_HOME /usr/lib/jvm/java-8-oracle/
 
 
 
-
 RUN apt-get -y install software-properties-common
 
 
@@ -32,14 +31,17 @@ RUN apt-get -y install  ant curl unzip  sudo tar mysql-server software-propertie
 RUN pip install j2cli
 
 
-RUN curl -L https://github.com/mihaics/opengts-cloud/archive/master.zip -o /usr/local/opengts-cloud-master.zip && \
-    unzip /usr/local/opengts-cloud-master.zip -d /usr/local && \
-    ln -s /usr/local/opengts-cloud-master/OpenGTS_$GTS_VERSION $GTS_HOME &&\
-	rm /usr/local/opengts-cloud-master.zip
+#RUN curl -L https://github.com/mihaics/opengts-cloud/archive/master.zip -o /usr/local/opengts-cloud-master.zip && \
+#    unzip /usr/local/opengts-cloud-master.zip -d /usr/local && \
+#    ln -s /usr/local/opengts-cloud-master/OpenGTS_$GTS_VERSION $GTS_HOME &&\
+#	rm /usr/local/opengts-cloud-master.zip
 
-VOLUME /usr/local/opengts-cloud-master/config
+#VOLUME /usr/local/opengts-cloud-master/config
 
-
+ADD OpenGTS_$GTS_VERSION /usr/local/
+ADD config /usr/local/
+VOLUME /usr/local/config
+RUN ln -s /usr/local/OpenGTS_$GTS_VERSION $GTS_HOME 
 	
 	# http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 RUN curl -L http://archive.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz -o /usr/local/tomcat.tar.gz
