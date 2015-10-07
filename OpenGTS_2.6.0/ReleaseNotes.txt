@@ -1,0 +1,34 @@
+
+Version 2.6.0 [2015/09/24]
+- NEW: Added additional status codes.
+- NEW: Requires at least Java JDK 7 to utilize additional features.
+- NEW: Added "engineTemp", "oilCoolerInTemp", "oilCoolerOutTemp" to EventData.
+- NEW: Added additional Device table columns.
+- NEW: Updated checkInstall to report non-GTS user owned files in $CATALINA_HOME
+- NEW: Geozone now supports setting custom status codes for Arrive/Depart.
+- UPD: Status codes STATUS_DOOR_[OPEN|CLOSE]_* moved to new value.
+- UPD: Status codes STATUS_SEATBELT_[ON|OFF]_* moved to new value.
+- UPD: Added additional STATUS_INPUT_[ON|OFF]_* codes.
+- UPD: "dcservers.dtd" updated with latest XML config (thanks to Andrey Troitskiy)
+- UPD: CheckInstall now displays missing optional jars as warnings (not errors).
+- UPD: CheckInstall now checks for non-GTS user owned files (Java 7+ only)
+- UPD: Removed weather/cloud later from Google Maps (no longer supported by Google)
+- DCS: astra] DCS updated with new protocol features.
+- DCS: tk10x] DCS updated with new protocol features.
+
+-----------------------------------------------------------------------------------
+
+Project Home Page:
+    http://www.opengts.org
+
+Download Latest Version from SourceForge:
+    https://sourceforge.net/projects/opengts/
+
+Documentation (installation/configuration, tutorials, FAQ):
+    http://www.opengts.org/FAQ.html
+    http://www.opengts.org/documentation.html
+
+GTS Enterprise:
+    http://www.geotelematic.com/gts.html
+    http://www.geotelematic.com/documentation.html
+
