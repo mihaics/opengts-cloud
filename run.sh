@@ -1,6 +1,6 @@
 #!/bin/bash
 #create config from jinja templates
-j2  /usr/local/config/build.properties.j2 /usr/local/config/build.properties.init > $GTS_HOME/build.properties
+j2  /usr/local/config/build.properties.j2 /usr/local/config/build.properties.ini > $GTS_HOME/build.properties
 
 
 cd $GTS_HOME; ant all
