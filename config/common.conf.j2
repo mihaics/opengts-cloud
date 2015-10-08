@@ -123,11 +123,11 @@ db.provider=mysql
 # --- MySQL
 %if db.provider == mysql
     db.sql.provider=${ServiceAccount.db.provider=mysql}
-    db.sql.host=localhost
-    db.sql.port=3306
-    db.sql.dbname=${ServiceAccount.db.name=gts}
-    db.sql.user=${ServiceAccount.db.user=gts}
-    db.sql.password=${ServiceAccount.db.pass=opengts}
+    db.sql.host={{ MYSQL_HOST | default('localhost')}}
+    db.sql.port={{ MYSQL_PORT_3306_TCP_PORT | default('3306')}}
+    db.sql.dbname=${ServiceAccount.db.name={{ MYSQL_DATABASE | default('gts')}} }
+    db.sql.user=${ServiceAccount.db.user={{MYSQL_USER | default('gts')}}}
+    db.sql.password=${ServiceAccount.db.pass={{MYSQL_PASSWORD | default(''opengts)}}}
     #db.sql.rootUser=root
     #db.sql.rootPass=rootpass
     db.sql.utf8=${ServiceAccount.db.utf8=true}
@@ -260,7 +260,7 @@ http.userAgent=OpenGTS/${%version} [${session.locale=EN}] ${session.name=}
 
 # --- PasswordHandler [default|md5|<className>]
 #PasswordHandler.class=<include a PasswordHandler implementation subclass here>
-#PasswordHandler.class=md5
+PasswordHandler.class=md5
 
 # -----------------------------------------------------------------------------
 
@@ -300,8 +300,8 @@ http.userAgent=OpenGTS/${%version} [${session.locale=EN}] ${session.name=}
 #RuleFactory.class=<include a RuleFactory implementation subclass here>
 
 # --- RuleFactoryLite
-#RuleFactory.class=org.opengts.extra.rule.RuleFactoryLite
-#RuleFactoryLite.emailEnabled=true
+RuleFactory.class=org.opengts.extra.rule.RuleFactoryLite
+RuleFactoryLite.emailEnabled=true
 
 # --- Custom Rule functions/identifiers
 #EventFunctionMap.adminAccounts=cronadmin
