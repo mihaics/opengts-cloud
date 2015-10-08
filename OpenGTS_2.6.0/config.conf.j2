@@ -10,7 +10,6 @@
 #     module should be restarted, after making any changes to the runtime
 #     configuration.
 # -----------------------------------------------------------------------------
-#%log=Loading ${%configURL} 
 
 # --- logging
 #log.file.enable=true
@@ -265,16 +264,12 @@ Device.checkLastOdometer=true
 #SmsGatewayHandler.emailSubject.smsEmailAddress=@sms.example.com
 
 # --- Generic Http SMS gateway, eg. Kannel (uncomment to enable)
-#SmsGatewayHandler.httpURL.url=http://localhost:1234/sms/sendSMS?from=%{sender}&to=%{mobile}&message=%{message}
 
 # --- MultiTech SF100-G SMS gateway via HTTP (uncomment to enable)
-#SmsGatewayHandler.httpURL.url=http://10.0.0.2:9191/sendmsg?user=admin&passwd=password&cat=1&to=%{mobile}&text=%{message}
 
 # --- CDYNE SMS gateway via HTTP (uncomment to enable)
-#SmsGatewayHandler.httpURL.url=http://sms2.cdyne.com/sms.svc/SimpleSMSSend?LicenseKey=LICENSE_KEY&PhoneNumber=%{1mobile}&Message=%{message}
 
 # --- Clickatell SMS gateway via HTTP (uncomment to enable)
-#SmsGatewayHandler.httpURL.url=http://api.clickatell.com/http/sendmsg?user=ACCOUNT_ID&password=PASSWORD&api_id=API_ID&MO=1&from=FROM_PHONE&to=%{mobile}&text=%{message}
 
 # --- Twilio SMS gateway (GTSE support only)
 # - Twilio support requires the following additional library jar files:
