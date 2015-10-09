@@ -33,7 +33,7 @@ Host.Name=mysql
 
 # --- Database Provider
 db.sql.provider=mysql
-db.sql.host={{MYSQL_PORT_3306_TCP_ADDR}}
+db.sql.host={{MYSQL_PORT_3306_TCP_ADDR| default('mysql')}}
 db.sql.port={{MYSQL_PORT_3306_TCP_PORT | default('3306')}}
 db.sql.dbname={{MYSQL_DBNAME | default('gts')}}
 db.sql.user={{MYSQL_DBUSER | default('gts')}}
