@@ -27,7 +27,7 @@ RUN \
 
 RUN ln -s $ORACLE_JAVA_HOME $JAVA_HOME
 
-RUN apt-get -y install  ant curl unzip  sudo tar software-properties-common python-jinja2 python-pip
+RUN apt-get -y install  ant curl unzip  sudo tar software-properties-common python-jinja2 python-pip jq
 RUN pip install j2cli
 
 
