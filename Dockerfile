@@ -17,7 +17,7 @@ ENV ORACLE_JAVA_HOME /usr/lib/jvm/java-8-oracle/
 RUN apt-get -y install software-properties-common
 
 
-
+#prepare and install JDK
 RUN \
   echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
@@ -27,19 +27,19 @@ RUN \
 
 RUN ln -s $ORACLE_JAVA_HOME $JAVA_HOME
 
+#install additional software
 RUN apt-get -y install  ant curl unzip  sudo tar software-properties-common python-jinja2 python-pip jq
 RUN pip install j2cli
 
 
+# get our version of opengts
 RUN curl -L https://github.com/mihaics/opengts-cloud/archive/master.zip -o /usr/local/opengts-cloud-master.zip && \
     unzip /usr/local/opengts-cloud-master.zip -d /usr/local && \
     ln -s /usr/local/opengts-cloud-master/OpenGTS_$GTS_VERSION $GTS_HOME &&\
     rm /usr/local/opengts-cloud-master.zip
 
-VOLUME /usr/local/opengts-cloud-master/config
 
-
-
+#install tomcat and java libraries
 # http://mirrors.hostingromania.ro/apache.org/tomcat/tomcat-8/v8.0.27/bin/apache-tomcat-8.0.27.tar.gz
 RUN curl -L http://archive.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz -o /usr/local/tomcat.tar.gz
 
@@ -63,13 +63,22 @@ RUN cd $GTS_HOME; sed -i 's/\(mysql-connector-java\).*.jar/\1-5.1.31-bin.jar/' b
     sed -i 's/"mail.jar"/"javax.mail.jar"/' src/org/opengts/tools/CheckInstall.java; \
 	sed -i 's/\/\/\*\*\/public/public/' src/org/opengts/war/tools/BufferedHttpServletResponse.java
 	
+#add start and helper scripts
 
-ADD run.sh /usr/local/apache-tomcat-$TOMCAT_VERSION/bin/
-RUN chmod 755 /usr/local/apache-tomcat-$TOMCAT_VERSION/bin/run.sh
-
+ADD run.sh /usr/local/bin/
+RUN chmod 755 /usr/local/bin/run.sh
 
 RUN rm -rf /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/docs
 EXPOSE 8080
-#CMD ["/usr/local/tomcat/bin/run.sh"]
+
+RUN useradd -d $GTS_HOME -s /bin/bash opengts
+RUN chown -R opengts:opengts $GTS_HOME; chown -R opengts:opengts /usr/local/opengts-cloud-master; chown -R opengts:opengts /usr/local/tomcat/
+USER opengts
+
+
+#CMD ["/usr/local/bin/run.sh"]
 CMD /bin/bash
+
+
+
 
