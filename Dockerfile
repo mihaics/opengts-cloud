@@ -76,8 +76,8 @@ RUN chown -R opengts:opengts $GTS_HOME; chown -R opengts:opengts /usr/local/open
 USER opengts
 
 
-#CMD ["/usr/local/bin/run.sh"]
-CMD /bin/bash
+CMD ["/usr/local/bin/run.sh"]
+#CMD /bin/bash
 
 
 
