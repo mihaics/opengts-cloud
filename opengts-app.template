@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: opengts-app-demo
+  labels:
+    name: opengts-app-demo
+spec:
+  containers:
+    - image: mcsaky/opengts-cloud
+      name: opengts-app-demo
+      env:
+        - name: ETCD_SRV_ADDR
+          value: 192.168.56.102
+        - name: OPENGTS_CLIENT_ID
+          value: demo
+      ports:
+        - containerPort: 8080
+          name: tomcat
