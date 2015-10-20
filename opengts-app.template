@@ -10,7 +10,7 @@ spec:
       name: opengts-app-demo
       env:
         - name: ETCD_SRV_ADDR
-          value: 192.168.56.102
+          value: 127.0.0.1
         - name: OPENGTS_CLIENT_ID
           value: demo
       ports:

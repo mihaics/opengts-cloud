@@ -7,6 +7,6 @@ etcdctl set /opengts/$1/CREATE_DATABASE true
 
 
 
-cp opengts-app.yml.j2 opengts-app.template
+cp opengts-app.template opengts-app-$1.yml
 sed -i "s/demo/$1/g" opengts-app-$1.yml
 kubectl create -f opengts-app-$1.yml
