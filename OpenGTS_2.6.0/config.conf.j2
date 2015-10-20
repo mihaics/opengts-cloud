@@ -26,15 +26,16 @@ ServiceProvider.email=support@sysop-consulting.ro
 
 # -----------------------------------------------------------------------------
 # --- Host IP / Name
-Host.IP={{ MYSQL_PORT_3306_TCP_ADDR | default('127.0.0.1')}}
-Host.Name=mysql
+Host.IP={{ POD_IP | default('127.0.0.1')}}
+Host.Name={{ HOSTNAME | default('localhost')}}
+
 
 # -----------------------------------------------------------------------------
 
 # --- Database Provider
 db.sql.provider=mysql
-db.sql.host={{MYSQL_PORT_3306_TCP_ADDR| default('mysql')}}
-db.sql.port={{MYSQL_PORT_3306_TCP_PORT | default('3306')}}
+db.sql.host={{MYSQL_SERVICE_HOST | default('mysql')}}
+db.sql.port={{MYSQL_SERVICE_PORT | default('3306')}}
 db.sql.dbname={{MYSQL_DBNAME | default('gts')}}
 db.sql.user={{MYSQL_DBUSER | default('gts')}}
 db.sql.password={{MYSQL_DBPASSWORD | default('opengts')}}

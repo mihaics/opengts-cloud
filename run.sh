@@ -28,15 +28,12 @@ cp $GTS_HOME/build/*.war $CATALINA_HOME/webapps/
 if [ "$CREATE_DATABASE" = "true" ]
 then
   $GTS_HOME/bin/initdb.pl --rootPass=$MYSQL_ENV_MYSQL_ROOT_PASSWORD;
-
 # create sysadmin account
   $GTS_HOME/bin/admin.pl Account -account=sysadmin -pass=$SYSADMIN_PASSWORD -create;
-  curl -X PUT http://$ETCD_SRV_ADDR:2379/v2/keys/opengts/$OPENGTS_CLIENT_ID/CREATE_DATABASE?prevExist=true -d value="false";
-
-  
+  curl -XPUT http://$ETCD_SRV_ADDR:2379/v2/keys/opengts/$OPENGTS_CLIENT_ID/CREATE_DATABASE?prevExist=true -d value="false";
 fi
 
 
 $CATALINA_HOME/bin/catalina.sh run
-#/bin/bash
+
 
