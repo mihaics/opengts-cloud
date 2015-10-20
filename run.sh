@@ -25,7 +25,7 @@ cp $GTS_HOME/build/*.war $CATALINA_HOME/webapps/
 
 
 #init db if needed
-if [$CREATE_DATABASE = "true" ]
+if [ "$CREATE_DATABASE" = "true" ]
 then
   $GTS_HOME/bin/initdb.pl --rootPass=$MYSQL_ENV_MYSQL_ROOT_PASSWORD;
 
