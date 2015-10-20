@@ -31,7 +31,7 @@ then
 
 # create sysadmin account
   $GTS_HOME/bin/admin.pl Account -account=sysadmin -pass=$SYSADMIN_PASSWORD -create;
-  curl -X PUT http://$ETCD_SRV_ADDR:2379/v2/keys/opengts/$OPENGTS_CLIENT_ID/CREATE_DATABASE -d value="false";
+  curl -X PUT http://$ETCD_SRV_ADDR:2379/v2/keys/opengts/$OPENGTS_CLIENT_ID/CREATE_DATABASE?prevExist=true -d value="false";
 
   
 fi
