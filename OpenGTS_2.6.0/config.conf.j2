@@ -122,12 +122,12 @@ startupInit.EventData.AutoIncrementIndex=true
 #EventData.allowInnoDBCountWithWhere=true
 
 # --- FuelRegister
-#FuelRegister.installFuelManager=true
-#FuelRegister.ignoreNegativeFuelLevels=true
-#FuelRegister.ignoreZeroFuelLevels=true
-#FuelRegister.ignoreWhileMoving=false
-#FuelRegister.levelIncreaseThreshold=0.50
-#FuelRegister.levelDecreaseThreshold=0.30
+FuelRegister.installFuelManager=true
+FuelRegister.ignoreNegativeFuelLevels=true
+FuelRegister.ignoreZeroFuelLevels=true
+FuelRegister.ignoreWhileMoving=false
+FuelRegister.levelIncreaseThreshold=0.50
+FuelRegister.levelDecreaseThreshold=0.30
 
 # -----------------------------------------------------------------------------
 # --- Account table properties
@@ -351,7 +351,7 @@ Domain.Properties.calendar.firstDayOfWeek=1
 # - misc options
 Domain.MapProvider.map.fillFrame=true
 Domain.MapProvider.map.routeLine=true
-#Domain.MapProvider.map.showPushpins=false
+Domain.MapProvider.map.showPushpins=true
 #Domain.MapProvider.map.includeGeozones=true
 
 # - auto-update options
@@ -1050,7 +1050,7 @@ Domain.MapProvider.default.lon=24.1532242
 
 # --- Track BaseURI
 # --- (overridable 'Track' servlet base URL)
-#track.baseURI=./Track
+track.baseURI=./{{ OPENGTS_CLIENT_ID }}/Track
 
 # --- offline text (feature may not be available in all releases)
 #track.offlineFile=/tmp/.gtsOffline
