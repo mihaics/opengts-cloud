@@ -46,7 +46,7 @@ RUN curl -L http://archive.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/
 RUN  tar zxf /usr/local/tomcat.tar.gz -C /usr/local && rm /usr/local/tomcat.tar.gz && ln -s /usr/local/apache-tomcat-$TOMCAT_VERSION $CATALINA_HOME
 
 ADD tomcat-users.xml /usr/local/apache-tomcat-$TOMCAT_VERSION/conf/
-
+ADD server.xml       /usr/local/apache-tomcat-$TOMCAT_VERSION/conf/
 #put java.mail in place
 RUN curl -L http://java.net/projects/javamail/downloads/download/javax.mail.jar -o $GTS_HOME/jlib/javamail/javax.mail.jar
 
