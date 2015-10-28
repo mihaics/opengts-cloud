@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # Project: OpenGTS - Open GPS Tracking System
-# URL    : http://www.opengts.org
+# URL    : http://www.sysop-consulting.ro
 # File   : serverList
 # -----------------------------------------------------------------------------
 # This file is sourced by the script 'startServers.sh', and should contain startup

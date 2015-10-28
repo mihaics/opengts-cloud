@@ -1741,7 +1741,7 @@ public class CheckInstall
                                 // -- less than recommended value
                                 printVariable(maxConnTitle, maxStr, "(Recommend at least "+recommendedMaxConn+")");
                                 recommendations.append("- Recommend setting MySQL 'max_connections' to at least "+recommendedMaxConn+":\n");
-                                recommendations.append("     see \"http://www.opengts.org/FAQ.html#faq_mysqlConn\"\n");
+                                recommendations.append("     see \"http://www.sysop-consulting.ro/FAQ.html#faq_mysqlConn\"\n");
                             } else {
                                 printVariable(maxConnTitle, maxStr, "");
                             }
@@ -1751,7 +1751,7 @@ public class CheckInstall
                     // -- "max_connections" not found
                     printVariable(maxConnTitle, "default", "(Recommend setting to at least "+recommendedMaxConn+")");
                     recommendations.append("- Recommend setting MySQL 'max_connections' to at least "+recommendedMaxConn+".\n");
-                    recommendations.append("     see \"http://www.opengts.org/FAQ.html#faq_mysqlConn\"\n");
+                    recommendations.append("     see \"http://www.sysop-consulting.ro/FAQ.html#faq_mysqlConn\"\n");
                 }
             } else {
                 printVariable(maxConnTitle, "unknown", "('"+myCnfFile+"' not found)");

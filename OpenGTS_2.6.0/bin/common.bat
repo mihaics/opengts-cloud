@@ -1,6 +1,6 @@
 :: -----------------------------------------------------------------------------
 :: Project: OpenGTS - Open GPS Tracking System
-:: URL    : http://www.opengts.org
+:: URL    : http://www.sysop-consulting.ro
 :: File   : common.bat
 :: -----------------------------------------------------------------------------
 :: This command is to be included in other '.bat' commands and is not intended

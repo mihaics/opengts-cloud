@@ -3052,7 +3052,7 @@ public class EventUtil
     // ------------------------------------------------------------------------
     // <?xml version="1.0" encoding="UTF-8"?>
     // <gpx version="1.0"
-    //      creator="OpenGTS - http://www.opengts.org"
+    //      creator="OpenGTS - http://www.sysop-consulting.ro"
     //      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     //      xmlns="http://www.topografix.com/GPX/1/0"
     //      xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
@@ -3094,7 +3094,7 @@ public class EventUtil
         /* header */
         this.write(pwout, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
         this.write(pwout, "<gpx version=\"1.0\"\n");
-        this.write(pwout, "    creator=\"OpenGTS "+Version.getVersion()+" - http://www.opengts.org\"\n");
+        this.write(pwout, "    creator=\"OpenGTS "+Version.getVersion()+" - http://www.sysop-consulting.ro\"\n");
         this.write(pwout, "    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
         this.write(pwout, "    xsi:schemaLocation=\"http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd\">\n");
         this.write(pwout, "  <time>" + (new DateTime(tz)).format(dateFmt) + "</time>\n");

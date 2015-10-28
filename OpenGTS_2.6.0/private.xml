@@ -6,7 +6,7 @@
 <!--
   =======================================================================================
   Project: OpenGTS - Open GPS Tracking System
-  URL    : http://www.opengts.org
+  URL    : http://www.sysop-consulting.ro
   File   : private.xml
   =======================================================================================
   Notes:
@@ -1388,7 +1388,7 @@ Notes:
         <!-- Links - ->
         <MenuGroup name="menuGroup.links" topMenu="false" menuBar="true">
             <Title i18n="PrivateXML.menugroup.links">Links</Title>
-            <Link url="http://www.opengts.org" target="_blank">
+            <Link url="http://www.sysop-consulting.ro" target="_blank">
                 <NavigationDescription>OpenGTS</NavigationDescription>
                 <MenuDescription>OpenGTS home</MenuDescription>
                 <MenuHelp>OpenGTS project home page</MenuHelp>

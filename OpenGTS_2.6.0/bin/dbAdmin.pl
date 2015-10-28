@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # -----------------------------------------------------------------------------
 # Project    : OpenGTS - Open GPS Tracking System
-# URL        : http://www.opengts.org
+# URL        : http://www.sysop-consulting.ro
 # File       : dbAdmin.pl
 # Description: Command-line DB administration utility.
 # -----------------------------------------------------------------------------

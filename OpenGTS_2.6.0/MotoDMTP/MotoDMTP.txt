@@ -4,7 +4,7 @@ Version    : MotoDMTP 1.2.2c
 Copyright  : Copyright(C) 2010-2011, GeoTelematics, Solutions, Inc.
 Contact    : projects@geotelematic.com
 OpenDMTP   : http://www.opendmtp.org
-OpenGTS    : http://www.opengts.org
+OpenGTS    : http://www.sysop-consulting.ro
 --------------------------------------------------------------------------------------
 
 The source for the MotoDMTP GPS tracking support software is located in the OpenDMTP 

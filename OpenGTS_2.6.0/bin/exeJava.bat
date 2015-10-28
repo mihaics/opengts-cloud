@@ -1,7 +1,7 @@
 @echo off
 :: -----------------------------------------------------------------------------
 :: Project: OpenGTS - Open GPS Tracking System
-:: URL    : http://www.opengts.org
+:: URL    : http://www.sysop-consulting.ro
 :: File   : exeJava.bat
 :: -----------------------------------------------------------------------------
 if "%GTS_HOME%" == "" echo Missing GTS_HOME environment variable

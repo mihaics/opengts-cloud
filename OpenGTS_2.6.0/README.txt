@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
 Project: OpenGTS - Open GPS Tracking System
-URL    : http://www.opengts.org
+URL    : http://www.sysop-consulting.ro
 File   : README.txt
 -----------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ Notes:
  - A listing of the database tables and fields can be found in the file "SCHEMA.txt"
    in the OpenGTS installation diretory.
  - Documentation is available online at the following link:
-     http://www.opengts.org/documentation.html
+     http://www.sysop-consulting.ro/documentation.html
  - This open-source version of OpenGTS includes support for the following GPS 
    tracking devices:
      - Aspicore GSM Tracker (Nokia, Samsung, Sony Ericsson phones).
@@ -48,7 +48,7 @@ Please let us know if you find any issues with this release.
 
 Visit the following link for additional downloadable documentation and add-ons for 
 OpenGTS:
-  http://www.opengts.org/documentation.html
+  http://www.sysop-consulting.ro/documentation.html
   http://www.geotelematic.com/documentation.html
 
 -----------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ their copyright and license information:
 
 Contributors:
   See the following link for a list of contributors:
-    http://www.opengts.org/info.html
+    http://www.sysop-consulting.ro/info.html
 
 -----------------------------------------------------------------------------------
 

@@ -14,7 +14,7 @@ response.setDateHeader("EXPIRES"  , 0         );
 <!-- jsp/loginSession_banner.jsp: <gts:var>${version} [${privateLabelName}]</gts:var>
   =======================================================================================
   Copyright(C) 2007-2015 SysOP Consulting, All rights reserved
-  Project: OpenGTS - Open GPS Tracking System [http://www.opengts.org]
+  Project: OpenGTS - Open GPS Tracking System [http://www.sysop-consulting.ro]
   =======================================================================================
 -->
 <gts:var ifKey="notDefined" value="true">

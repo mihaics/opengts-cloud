@@ -19,14 +19,14 @@ Version 2.6.0 [2015/09/24]
 -----------------------------------------------------------------------------------
 
 Project Home Page:
-    http://www.opengts.org
+    http://www.sysop-consulting.ro
 
 Download Latest Version from SourceForge:
     https://sourceforge.net/projects/opengts/
 
 Documentation (installation/configuration, tutorials, FAQ):
-    http://www.opengts.org/FAQ.html
-    http://www.opengts.org/documentation.html
+    http://www.sysop-consulting.ro/FAQ.html
+    http://www.sysop-consulting.ro/documentation.html
 
 GTS Enterprise:
     http://www.geotelematic.com/gts.html

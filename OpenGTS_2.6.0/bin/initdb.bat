@@ -1,7 +1,7 @@
 @echo off
 :: -----------------------------------------------------------------------------
 :: Project: OpenGTS - Open GPS Tracking System
-:: URL    : http://www.opengts.org
+:: URL    : http://www.sysop-consulting.ro
 :: File   : initdb.bat
 :: -----------------------------------------------------
 ::  Valid Options:  (options should be enclosed in quotes)

@@ -1,7 +1,7 @@
 #!/bin/bash
 # -----------------------------------------------------------------------------
 # Project: OpenGTS - Open GPS Tracking System
-# URL    : http://www.opengts.org
+# URL    : http://www.sysop-consulting.ro
 # File   : gtsdb.sh
 # -----------------------------------------------------------------------------
 # Displays the build version of the 'gtsdb.jar' file.

@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
 Project: OpenGTS - Open GPS Tracking System
-URL    : http://www.opengts.org
+URL    : http://www.sysop-consulting.ro
 File   : src/org/opengts/war/track/page/devcmd/README.txt
 -----------------------------------------------------------------------------------
 

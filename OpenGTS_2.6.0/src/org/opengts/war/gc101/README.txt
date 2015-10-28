@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
 Project: OpenGTS - Open GPS Tracking System
-URL    : http://www.opengts.org
+URL    : http://www.sysop-consulting.ro
 File   : README.txt
 -----------------------------------------------------------------------------------
 Note:  This GC101 communication server may also support the following devices:
