@@ -13,7 +13,7 @@ response.setDateHeader("EXPIRES"  , 0         );
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'>
 <!-- jsp/loginSession.jsp: <gts:var>${version} [${privateLabelName}]</gts:var>
   =======================================================================================
-  Copyright(C) 2007-2015 GeoTelematic Solutions, Inc., All rights reserved
+  Copyright(C) 2007-2015 SysOP Consulting, All rights reserved
   Project: OpenGTS - Open GPS Tracking System [http://www.opengts.org]
   =======================================================================================
 -->
@@ -81,7 +81,7 @@ response.setDateHeader("EXPIRES"  , 0         );
 
   <!-- meta -->
   <gts:var>
-  <meta name="author" content="GeoTelematic Solutions, Inc."/>
+  <meta name="author" content="SysOP Consulting SRL"/>
   <meta http-equiv="content-type" content='text/html; charset=UTF-8'/>
   <meta http-equiv="cache-control" content='no-cache'/>
   <meta http-equiv="pragma" content="no-cache"/>
@@ -149,7 +149,7 @@ response.setDateHeader("EXPIRES"  , 0         );
       <gts:var>
       <td class="titleText" valign="center">
         ${pageTitle}<br>
-        <font style="font-size: 8pt;"><i>(Powered by <a href="http://www.opengts.org" target="_blank" style="color:#444444;">OpenGTS</a>)</i></font>
+        <font style="font-size: 8pt;"><i>(<a href="http://www.sysop-consulting.ro" target="_blank" style="color:#444444;">OpenGTS Cloud</a>)</i></font>
       </td>
       </gts:var>
 
@@ -221,7 +221,7 @@ response.setDateHeader("EXPIRES"  , 0         );
       </td>
       <td nowrap style="padding-bottom: 2px;">
          <span style="font-size: 7pt; font-style: oblique; color: #888888;"><gts:var ifTrue="login.showGTSVersion">${version}</gts:var></span>&nbsp;&nbsp;
-         <gts:var ifTrue="login.showPiLink"><a style="font-size: 11pt; text-decoration: none;" href="${login.piLink=http://www.opengts.org}" target="_blank">&pi;</a>&nbsp;</gts:var>
+         <gts:var ifTrue="login.showPiLink"><a style="font-size: 11pt; text-decoration: none;" href="${login.piLink=http://www.sysop-consulting.ro}" target="_blank">&pi;</a>&nbsp;</gts:var>
       </td>
     </tr>
     </tbody>

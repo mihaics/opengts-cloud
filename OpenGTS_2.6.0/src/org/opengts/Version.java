@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-// Copyright 2007-2015, GeoTelematic Solutions, Inc.
+// Copyright 2007-2015, SysOP Consulting
 // All rights reserved
 // ----------------------------------------------------------------------------
 //
@@ -67,7 +67,7 @@ public class Version
     // ------------------------------------------------------------------------
 
     // "public" as of 2.3.4-B06
-    public  static final String COPYRIGHT = "Copyright 2007-2015, GeoTelematic Solutions, Inc.";
+    public  static final String COPYRIGHT = "Copyright 2007-2015, SysOP Consulting";
 
     // ------------------------------------------------------------------------
 

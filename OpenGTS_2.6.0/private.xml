@@ -251,10 +251,10 @@ Notes:
     <!-- ========================================================================================== -->
 
     <!-- Copyright used in html head 'meta' tag -->
-    <Copyright>${Domain.Copyright=Copyright(C) 2007-2015 GeoTelematic Solutions, Inc.}</Copyright>
+    <Copyright>${Domain.Copyright=Copyright(C) 2007-2015 SysOP Consulting}</Copyright>
 
     <!-- Title used in html head 'title' tag -->
-    <PageTitle i18n="PrivateXML.pageTitle">${Domain.PageTitle=${ServiceAccount.Name=OpenGTS} GPS Tracking}</PageTitle>
+    <PageTitle i18n="PrivateXML.pageTitle">${Domain.PageTitle=${ServiceAccount.Name=OpenGTS} Cloud}</PageTitle>
 
     <!-- Date/Time format (Note: These date/time format values are CASE SENSITIVE!!)
      === Formatting options:

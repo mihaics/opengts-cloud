@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
 GTS Changelog
-Copyright 2007-2015 GeoTelematic Solutions, Inc.
+Copyright 2007-2015 SysOP Consulting
 -----------------------------------------------------------------------------------
 
 Version 2.6.0 [2015/09/24]
@@ -1453,7 +1453,7 @@ Version 1.2.0 [2007/01/25]
 
 -----------------------------------------------------------------------------------
 
-The OpenGTS/OpenDMTP software is Copyright GeoTelematic Solutions, Inc.
+The OpenGTS/OpenDMTP software is Copyright SysOP Consulting
 
 OpenGTS/OpenDMTP is not affiliated with Sun Microsystems, Inc, Sprint/Nextel, Boost 
 Mobile, Motorola, or any other commercial entity mentioned, in any way.

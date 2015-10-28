@@ -6,7 +6,7 @@ File   : build_custom.xml
 ===============================================================================
 -->
 
-<!-- Copyright 2007-2015 GeoTelematic Solutions, Inc. -->
+<!-- Copyright 2007-2015 SysOP Consulting -->
 <project name="GTS Custom" basedir=".">
 
   <!-- ======================================================================== -->

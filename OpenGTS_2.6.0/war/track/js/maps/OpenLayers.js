@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-// Copyright(C) 2007-2015 GeoTelematic Solutions, Inc.
+// Copyright(C) 2007-2015 SysOP Consulting
 // ----------------------------------------------------------------------------
 // To provide some additional features for OpenLayers, portions of the OpenLayers support
 // have been copied from 'mapstraction.js' [www.mapstraction.com] which includes the 

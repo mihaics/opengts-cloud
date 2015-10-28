@@ -324,7 +324,7 @@
 
 # --- private.xml: Page title
 #Domain.PageTitle=Acme Systems GPS Tracking
-#Domain.Copyright=Copyright(C) GeoTelematic Solutions, Inc.
+#Domain.Copyright=Copyright(C) SysOP Consulting
 
 # --- private.xml: Date/Time format
 #Domain.DateFormat=yyyy/MM/dd

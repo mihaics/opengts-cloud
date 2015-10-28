@@ -19,7 +19,7 @@ response.setDateHeader("EXPIRES"  , 0         );
 <head>
   <gts:var>
   <!-- meta tags -->
-  <meta name="author" content="GeoTelematic Solutions, Inc."/>
+  <meta name="author" content="SysOP Consulting SRL"/>
   <meta http-equiv="content-type" content='text/html; charset=UTF-8'/>
   <meta http-equiv="cache-control" content='no-cache'/>
   <meta http-equiv="pragma" content="no-cache"/>
