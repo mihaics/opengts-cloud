@@ -672,8 +672,8 @@ Notes:
          === Copy the OpenLayers.js module to a local server, then change this link
          === to point to your local cached version.
          -->
-        <!-- Property key="openlayers.js">./js/openlayers/OpenLayers.js</Property -->
-        <Property key="openlayers.js">http://openlayers.org/api/OpenLayers.js</Property>
+        <Property key="openlayers.js">./js/openlayers/ol.js</Property> 
+        <!-- Property key="openlayers.js">http://openlayers.org/api/OpenLayers.js</Property -->
 
         <!-- MapQuest layers -->
         <Property key="mapQuest.enableLayer.osm">false</Property>       <!-- show MapQuest OSM map layer -->
