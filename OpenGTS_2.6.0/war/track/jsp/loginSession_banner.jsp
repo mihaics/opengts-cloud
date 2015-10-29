@@ -70,7 +70,7 @@ response.setDateHeader("EXPIRES"  , 0         );
     }
     TD.titleText {
         /* background: #DBDEEB url('./images/Banner_White90.png') center no-repeat; */
-        background: #DBDEEB url('./images/Banner_WhiteShadow.png') center no-repeat;
+        /*background: #DBDEEB url('./images/Banner_WhiteShadow.png') center no-repeat;*/
         font-family: arial,verdana,sans-serif;
         font-size: 28pt;
         font-weight: bold;
@@ -102,7 +102,7 @@ response.setDateHeader("EXPIRES"  , 0         );
     <tr>
 
       <gts:var>
-      <td width="860" height="120" class="titleText" halign="center">
+      <td width="860" height="12" class="titleText" halign="center">
         ${pageTitle}<br>
         <font style="font-size: 9pt;"><i>(<a href="http://www.sysop-consulting.ro" target="_blank" style="color:#444444;">OpenGTS Cloud</a>)</i></font>
       </td>
