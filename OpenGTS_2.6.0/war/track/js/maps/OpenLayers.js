@@ -281,6 +281,10 @@ JSMap.prototype._initOpenStreetMaps = function(mapElement)
     var NEW_OSM_LAYER = true;
     if (NEW_OSM_LAYER) {
         this.openLayersMap.addLayer(new OpenLayers.Layer.OSM("Mapnik OSM", [
+            "http://sysop.go.ro/${z}/${x}/${y}.png",
+            "http://sysop.go.ro/${z}/${x}/${y}.png",
+            "http://sysop.go.ro/${z}/${x}/${y}.png",
+            "http://sysop.go.ro/${z}/${x}/${y}.png",
             "http://a.tile.openstreetmap.org/${z}/${x}/${y}.png",
             "http://b.tile.openstreetmap.org/${z}/${x}/${y}.png",
             "http://c.tile.openstreetmap.org/${z}/${x}/${y}.png"
