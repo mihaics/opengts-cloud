@@ -313,7 +313,7 @@ Notes:
         <!-- AccountLogin properties -->
         <Property key="accountLogin.showLoginLink">true</Property>              <!-- [true|false] show "Login" link on login page -->
         <Property key="accountLogin.legacyLAF">false</Property>                 <!-- [true|false] show "Login" legacy look-and-feel -->
-        <Property key="accountLogin.showLocaleSelection">false</Property>       <!-- [true|false] (EXPERIMENTAL) show "Language" selection on login page -->
+        <Property key="accountLogin.showLocaleSelection">true</Property>       <!-- [true|false] (EXPERIMENTAL) show "Language" selection on login page -->
 
         <!-- MenuBar properties -->
         <Property key="menuBar.openOnMouseOver">true</Property>                 <!-- [true|false] popup menu on mouseover -->
@@ -356,15 +356,15 @@ Notes:
         <Property key="trackMap.mapControlLocation">right</Property>            <!-- [right|left] show controls to the left|right of the map -->
         <Property key="trackMap.mapControlCollapsible">true</Property>          <!-- [true|false] show collapsible controls -->
         <Property key="trackMap.showLocateNow">false</Property>                 <!-- [true|false] show "Locate Now" button -->
-        <Property key="trackMap.showGoogleKML">false</Property>                 <!-- [true|false|last] show "Google KML" link -->
+        <Property key="trackMap.showGoogleKML">true</Property>                 <!-- [true|false|last] show "Google KML" link -->
         <Property key="trackMap.limitType">last</Property>                      <!-- [first|last] overflow limit type -->
-        <Property key="trackMap.enableGeocode">false</Property>                 <!-- [true|false] (EXPERIMENTAL) show "Find Address" -->
+        <Property key="trackMap.enableGeocode">true</Property>                 <!-- [true|false] (EXPERIMENTAL) show "Find Address" -->
         <Property key="trackMap.showDeviceLink">false</Property>                <!-- [true|false] show Device Link (requires Device support) -->
-        <Property key="trackMap.showBatteryLevel">false</Property>              <!-- [false|icon|percent|default] show last Battery Level (requires Device support) -->
+        <Property key="trackMap.showBatteryLevel">true</Property>              <!-- [false|icon|percent|default] show last Battery Level (requires Device support) -->
         <Property key="trackMap.useRouteDisplayColor">true</Property>           <!-- [true|false] use Device 'displayColor' for route-line color -->
         <Property key="trackMap.showAllContainedGeozones">false</Property>      <!-- [true|false] (EXPERIMENTAL) show all contained Geozones ('false' shows only 'inner' Geozone) -->
         <Property key="trackMap.lastDevicePushpin.fleet">true</Property>        <!-- [true|false] show device pushpin for last pushpin on fleet map -->
-        <Property key="trackMap.lastDevicePushpin.device">false</Property>      <!-- [true|false] show device pushpin for last pushpin on device map -->
+        <Property key="trackMap.lastDevicePushpin.device">true</Property>      <!-- [true|false] show device pushpin for last pushpin on device map -->
 
         <!-- GoogleKML properties -->
         <Property key="googleKML.lastPushpinID">blue</Property>                 <!-- Color ID of the last event pushpin -->
@@ -376,7 +376,7 @@ Notes:
         <Property key="reportMenu.customFormatURL"></Property>                  <!-- [URL]  (EXPERIMENTAL) -->
 
         <!-- ReportDisplay properties -->
-        <Property key="reportDisplay.showGoogleKML">false</Property>            <!-- [true|false] show "KML" link (supported reports only) -->
+        <Property key="reportDisplay.showGoogleKML">true</Property>            <!-- [true|false] show "KML" link (supported reports only) -->
 
         <!-- DeviceInfo properties -->
         <Property key="deviceInfo.allowEditServerID">false</Property>           <!-- [true|false] Allow editing "Server ID" -->
@@ -464,7 +464,7 @@ Notes:
         <Property key="deviceChooser.extraDebugEntries">0</Property>            <!-- DEBUG TESTING PURPOSES ONLY! -->
 
         <!-- Calendar properties -->
-        <Property key="calendar.firstDayOfWeek">0</Property>                    <!-- [0=Sun,1=Mon,...6=Sat] calendar first day of week -->
+        <Property key="calendar.firstDayOfWeek">1</Property>                    <!-- [0=Sun,1=Mon,...6=Sat] calendar first day of week -->
         <Property key="calendar.timeTextField">true</Property>                  <!-- [true|false] allow entering hour:minute via a text field -->
 
         <!-- DeviceAlerts properties (module may not be present) -->
@@ -690,9 +690,9 @@ Notes:
         <Property key="details.combineSpeedHeading">false</Property>    <!-- combine speed/heading into single column -->
 
         <!-- default zoom/location -->
-        <Property key="default.zoom">4</Property>                       <!-- default zoom when no pushpins are displayed -->
-        <Property key="default.lat">39.0000</Property>                  <!-- default latitude when no pushpins are displayed -->
-        <Property key="default.lon">-96.5000</Property>                 <!-- default longitude when no pushpins are displayed -->
+        <Property key="default.zoom">8</Property>                       <!-- default zoom when no pushpins are displayed -->
+        <Property key="default.lat">45.9955998</Property>                  <!-- default latitude when no pushpins are displayed -->
+        <Property key="default.lon">23.5710348</Property>                 <!-- default longitude when no pushpins are displayed -->
 
         <!-- Geozone map size/config -->
         <!-- <Property key="zone.map.width">630</Property> -->
@@ -779,9 +779,9 @@ Notes:
         rtPropPrefix="Domain.MapProvider.">
         <Property key="map.fillFrame">false</Property>                  <!-- expand map to fill page frame -->
         <Property key="geoServer.enable">true</Property>                <!-- must be "true" for GeoServer support -->
-        <Property key="default.zoom">4</Property>                       <!-- default zoom when no pushpins are displayed -->
-        <Property key="default.lat">40.7000</Property>                  <!-- default latitude when no pushpins are displayed -->
-        <Property key="default.lon">-74.5000</Property>                 <!-- default longitude when no pushpins are displayed -->
+        <Property key="default.zoom">8</Property>                       <!-- default zoom when no pushpins are displayed -->
+        <Property key="default.lat">45.9955998</Property>                  <!-- default latitude when no pushpins are displayed -->
+        <Property key="default.lon">23.5710348</Property>                 <!-- default longitude when no pushpins are displayed -->
 
         <!-- GeoServer vars:
         === Set these values to match your GeoServer mapping service
@@ -834,9 +834,9 @@ Notes:
 
         <!-- default zoom/location -->
         <Property key="pushpin.zoom">14</Property>                      <!-- default zoom when pushpins are displayed -->
-        <Property key="default.zoom">4</Property>                       <!-- default zoom when no pushpins are displayed -->
-        <Property key="default.lat">39.0000</Property>                  <!-- default latitude when no pushpins are displayed -->
-        <Property key="default.lon">-96.5000</Property>                 <!-- default longitude when no pushpins are displayed -->
+        <Property key="default.zoom">8</Property>                       <!-- default zoom when no pushpins are displayed -->
+        <Property key="default.lat">45.9955998</Property>                  <!-- default latitude when no pushpins are displayed -->
+        <Property key="default.lon">23.5710348</Property>                 <!-- default longitude when no pushpins are displayed -->
 
         <!-- Geozone map size/config -->
         <Property key="zone.map.width">630</Property>
@@ -884,9 +884,9 @@ Notes:
         <Property key="provider">openlayers</Property>                  <!-- the Mapstraction map provider -->
         <Property key="localMapstractionJS">true</Property>             <!-- true to load local 'mapstraction.js' -->
         <Property key="pushpin.zoom">9</Property>                       <!-- default zoom when pushpins are displayed -->
-        <Property key="default.zoom">4</Property>                       <!-- default zoom when no pushpins are displayed -->
-        <Property key="default.lat">39.0000</Property>                  <!-- default latitude when no pushpins are displayed -->
-        <Property key="default.lon">-96.5000</Property>                 <!-- default longitude when no pushpins are displayed -->
+        <Property key="default.zoom">8</Property>                       <!-- default zoom when no pushpins are displayed -->
+        <Property key="default.lat">45.9955998</Property>                  <!-- default latitude when no pushpins are displayed -->
+        <Property key="default.lon">23.5710348</Property>                 <!-- default longitude when no pushpins are displayed -->
         <Property key="auto.enable">false</Property>                    <!-- enable/disable auto-update -->
         <Property key="auto.interval">30</Property>                     <!-- auto-update interval (in seconds) -->
         <Property key="auto.count">10</Property>                        <!-- maximum number of auto-updates -->
@@ -936,9 +936,9 @@ Notes:
         <!-- <Property key="map.height">470</Property>          -->     <!-- map width -->
 
         <!-- default zoom/location -->
-        <Property key="default.zoom">4</Property>                       <!-- default zoom when no pushpins are displayed -->
-        <Property key="default.lat">39.0000</Property>                  <!-- default latitude when no pushpins are displayed -->
-        <Property key="default.lon">-96.5000</Property>                 <!-- default longitude when no pushpins are displayed -->
+        <Property key="default.zoom">8</Property>                       <!-- default zoom when no pushpins are displayed -->
+        <Property key="default.lat">45.9955998</Property>                  <!-- default latitude when no pushpins are displayed -->
+        <Property key="default.lon">23.5710348</Property>                 <!-- default longitude when no pushpins are displayed -->
 
         <!-- Geozone map size/config -->
         <!-- <Property key="zone.map.width">630</Property> -->
@@ -1062,7 +1062,7 @@ Notes:
      ===     https://developer.mapquest.com/
      -->
     <ReverseGeocodeProvider name="nominatim" 
-        active="${Domain.ReverseGeocodeProvider.active=false}"
+        active="${Domain.ReverseGeocodeProvider.active=true}"
         class="org.opengts.geocoder.nominatim.Nominatim"
         key=""
         rtPropPrefix="Domain.ReverseGeocodeProvider.">
@@ -1072,7 +1072,7 @@ Notes:
         <Property key="mapquestAppKey"></Property>  <!-- Mapquest "Consumer key" -->
         <Property key="addressdetails">1</Property>
         <Property key="zoom">18</Property>
-        <Property key="email"></Property> <!-- per usage policy, this must be specified -->
+        <Property key="email">contact@sysop-consulting.ro</Property> <!-- per usage policy, this must be specified -->
         <Property key="useResultAddress">false</Property>
         <Property key="alwaysFast">false</Property>
     </ReverseGeocodeProvider>
