@@ -34,11 +34,6 @@ RUN pip install j2cli
 
 
 # get  opengts
-RUN curl -L https://github.com/mihaics/opengts-cloud/archive/master.zip -o /usr/local/opengts-cloud-master.zip && \
-    unzip /usr/local/opengts-cloud-master.zip -d /usr/local && \
-    ln -s /usr/local/opengts-cloud-master/OpenGTS_$GTS_VERSION $GTS_HOME &&\
-    rm /usr/local/opengts-cloud-master.zip
-
 RUN curl -L http://downloads.sourceforge.net/project/opengts/server-base/$GTS_VERSION/OpenGTS_$GTS_VERSION.zip -o /usr/local/OpenGTS_$GTS_VERSION.zip && \
     unzip /usr/local/OpenGTS_$GTS_VERSION.zip -d /usr/local && \
     ln -s /usr/local/OpenGTS_$GTS_VERSION $GTS_HOME && \
