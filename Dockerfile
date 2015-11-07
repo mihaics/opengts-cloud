@@ -25,6 +25,7 @@ RUN \
   apt-get update && \
   apt-get install -y oracle-java8-installer
 
+# link oracle to defined JAVA_HOME
 RUN ln -s $ORACLE_JAVA_HOME $JAVA_HOME
 
 #install additional software
@@ -32,11 +33,19 @@ RUN apt-get -y install  ant curl unzip  sudo tar software-properties-common pyth
 RUN pip install j2cli
 
 
-# get our version of opengts
+# get  opengts
 RUN curl -L https://github.com/mihaics/opengts-cloud/archive/master.zip -o /usr/local/opengts-cloud-master.zip && \
     unzip /usr/local/opengts-cloud-master.zip -d /usr/local && \
     ln -s /usr/local/opengts-cloud-master/OpenGTS_$GTS_VERSION $GTS_HOME &&\
     rm /usr/local/opengts-cloud-master.zip
+
+RUN curl -L http://downloads.sourceforge.net/project/opengts/server-base/$GTS_VERSION/OpenGTS_$GTS_VERSION.zip -o /usr/local/OpenGTS_$GTS_VERSION.zip && \
+    unzip /usr/local/OpenGTS_$GTS_VERSION.zip -d /usr/local && \
+    ln -s /usr/local/OpenGTS_$GTS_VERSION $GTS_HOME && \
+    rm /usr/local/OpenGTS_$GTS_VERSION.zip
+
+ADD build.properties.j2 $GTS_HOME/
+ADD config.conf.j2 $GTS_HOME/
 
 
 #install tomcat and java libraries
@@ -71,12 +80,11 @@ RUN rm -rf /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/docs
 EXPOSE 8080
 
 RUN useradd -d $GTS_HOME -s /bin/bash opengts
-RUN chown -R opengts:opengts $GTS_HOME; chown -R opengts:opengts /usr/local/opengts-cloud-master; chown -R opengts:opengts /usr/local/tomcat/
+RUN chown -R opengts:opengts $GTS_HOME; chown -R opengts:opengts /usr/local/OpenGTS_$GTS_VERSION; chown -R opengts:opengts /usr/local/tomcat/
 USER opengts
 
 
 CMD ["/usr/local/bin/run.sh"]
-#CMD /bin/bash
 
 
 
